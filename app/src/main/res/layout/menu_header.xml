@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#3D3E32"
+    android:paddingLeft="15dp">
+
+    <TextView
+        android:textColor="#fff"
+        android:id="@+id/UserNamedrw"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:text="Dahaboo" />
+    <TextView
+        android:fontFamily="@font/sf_pro_text_bold_italic"
+        android:id="@+id/nameDrawer"
+        android:layout_above="@id/UserNamedrw"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Bienvenue"
+        android:textColor="#DFD8D8"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="175dp"
+        android:layout_width="160dp"
+        android:src="@drawable/cab" />
+</RelativeLayout>

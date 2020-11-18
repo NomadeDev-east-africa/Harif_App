@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hariif</string>
+
+    <string name="acces_token">pk.eyJ1IjoiY2hpcmRvbiIsImEiOiJjazZzMG81ZDkwMjluM2RwZTc0eTZmd2UxIn0.ERk-fbtN06_jzcx0kgPxPA </string>
+    <string name="user_location_permission_not_granted">NotGranded</string>
+    <string name="user_location_permission_explanation">Allow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selected_place_info">place</string>
+
+</resources>

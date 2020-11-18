@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+
+    <color name="colorFeu">#F70000</color>
+    <color name="colorAccent">#1fcd6c</color>
+    <color name="white">#ffffff</color>
+    <color name="txt_color">#0d1724</color>
+    <color name="gray_cfd1d3">#cfd1d3</color>
+    <color name="trans">#00000000</color>
+    <color name="viewLine">#50acacac</color>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="25dp"
+                    android:orientation="vertical">
+
+
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:textColor="@color/txt_color"
+                            android:text="Your Ride"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/sf_pro_text_medium"/>
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your ride is"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:textColor="@color/txt_color"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/Pricefinale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/txt_color"
+                        android:textSize="50sp"
+                        android:text="$5.58"
+                        android:fontFamily="@font/sf_pro_text_bold"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dateofride"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="March 21, 2020 at 10:30 a.m."
+                        android:textSize="14sp"
+                        android:textColor="@color/txt_color"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Driverfinalview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_circle"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/Driverfinalname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:textSize="18sp"
+                android:text="Michael Douglas"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate your driver"
+                android:textSize="14sp"
+                android:textColor="@color/txt_color"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_gravity="center"
+                android:rating="3.5"/>
+
+            <TextView
+                android:id="@+id/PaidRider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="18.7sp"
+                android:fontFamily="@font/sf_pro_text_medium"
+                android:background="@drawable/black_rect"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:padding="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

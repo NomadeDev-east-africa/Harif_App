@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+
+
+    tools:context=".MainActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12.6dp"
+    android:id="@+id/infodashboard"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/round_corner_2"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.5dp"
+                    android:layout_marginTop="11.5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/pickup" />
+
+                    <EditText
+                        android:id="@+id/edtpickup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="Pick Up Point"
+                        android:inputType="text"
+                        android:cursorVisible="false"
+                        android:maxLines="1"
+                        android:textCursorDrawable="@drawable/red_color_coursor"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="13.5dp"
+                        android:layout_height="13.5dp"
+                        android:layout_marginRight="14dp"
+                        android:src="@drawable/home" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="18.6dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/dots" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.5dp"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/destination" />
+
+                    <EditText
+                        android:id="@+id/edtdestination"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="Destination Point"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:cursorVisible="false"
+                        android:textCursorDrawable="@drawable/green_color_coursor"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                mapbox:mapbox_cameraZoom="12" />
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/Statutsinfo"
+            android:layout_marginBottom="150dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/infocardviewcolor"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#079992"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="13dp"
+                app:cardMaxElevation="6dp"
+                app:contentPadding="17dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/Textinfostatu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kami adalah FoodPedia"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textSize="22sp"
+                        android:textColor="#fff"
+                        />
+                    <TextView
+                        android:id="@+id/Okaybutton"
+                        android:layout_marginRight="40dp"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:text="OK"
+                        android:layout_gravity="right"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView></LinearLayout>
+        <LinearLayout
+            android:layout_gravity="bottom"
+
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                  android:id="@+id/Infodriver"
+                android:layout_marginBottom="300dp"
+                android:layout_width="291dp"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingTop="10.8dp"
+                android:paddingLeft="12.5dp"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="40.7dp"
+                android:background="@drawable/round_corner_2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileDriver"
+                    android:layout_width="43.3dp"
+                    android:layout_height="43.3dp"
+                    android:src="@drawable/profile"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Drivername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:layout_marginTop="3dp"
+                                android:textColor="#000000"
+                                android:text="Mark Jon"/>
+
+                            <hyogeun.github.com.colorratingbarlib.ColorRatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:rating="4"
+                                app:empty_color="#ed8a19"
+                                app:progress_color="#ed8a19"
+                                android:layout_marginTop="0dp"
+                                style="@style/Base.Widget.AppCompat.RatingBar.Small"/>
+
+
+
+                        </LinearLayout>
+
+
+
+                        <ImageView
+                            android:id="@+id/CallButton"
+                            android:layout_width="15.7dp"
+                            android:layout_height="15.7dp"
+                            android:layout_marginRight="18dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/call"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginBottom="14.5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="17.7dp"
+                                android:layout_height="12.7dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/distance"/>
+
+                            <TextView
+                                android:id="@+id/platesDrivers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:text="44D55"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="13.7dp"
+                                android:layout_height="13.7dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/time"/>
+
+                            <TextView
+                                android:id="@+id/timefordrivertocome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="5dp"
+                                android:text="5 min"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/downarrow"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="30dp"
+            android:background="@drawable/white_gradient"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+               android:id="@+id/ServiceInfo"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="86dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/white_gray_border">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/car1"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="@color/txt_color"
+                        android:text="Economy"
+
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                       android:id="@+id/priceCab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="#333"
+                        android:text="Price:20$"
+
+                        android:layout_marginTop="5dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="86dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginEnd="23dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/white_gray_border">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/car2"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="@color/txt_color"
+                        android:text="Luxury"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/priceCab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="#333"
+                        android:text="Price:20$"
+
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="86dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/white_gray_border">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/car3"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="@color/txt_color"
+                        android:text="Family"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/priceCab3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="#333"
+                        android:text="Price:20$"
+
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/CallUber"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Request"
+            android:textColor="@color/white"
+            android:textSize="18.7sp"
+            android:background="@drawable/black_rect"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="15dp"/>
+    </RelativeLayout>
+

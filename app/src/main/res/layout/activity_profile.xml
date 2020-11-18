@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp"
+                    android:text="Work Profile"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <!--radar effect library can be used-->
+
+
+
+            <!--circle imageview library can be used-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:drawableRight="@drawable/ic_baseline_edit_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Rihana Martin"
+            android:textColor="#000"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/EmailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Graphic Designer"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="13sp"
+            android:textColor="#D9DDE6"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="42.3dp"
+            android:layout_marginRight="42.3dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:background="@drawable/rectangle"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="22dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Email"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:gravity="center"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/blue_rectangle"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Message"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_txt"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="465"
+                android:textColor="#585B81"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:id="@+id/NBRIDE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MyRides"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#CCCFD5"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="1398"
+                android:textColor="#585B81"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scores"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#CCCFD5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="3"
+                android:textColor="#585B81"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followings"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#CCCFD5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_txt"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_regular"
+        android:background="#3A4C8E"
+        android:padding="15dp"
+        android:gravity="center"/>
+</RelativeLayout>
